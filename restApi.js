@@ -8,12 +8,12 @@ const app = express();
 app.disable("x-powered-by");
 app.use(express.json());
 
-//Pagina de inicio
+/*/Pagina de inicio
 app.get("/", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.json({ message: "Hola mundo" });
 });
-
+*/
 //Desplegar todas las peliculas
 app.get("/movies", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
